@@ -35,16 +35,11 @@ pin_run_as_build:
     max_pin: x
   libtiff:
     max_pin: x
-  python:
-    min_pin: x.x
-    max_pin: x.x
-python:
-- 3.8.* *_cpython
 target_platform:
 - linux-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - cuda_compiler_version
-  - cdt_name
+- - cdt_name
+  - cuda_compiler_version
   - docker_image
