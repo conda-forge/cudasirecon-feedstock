@@ -1,6 +1,8 @@
 mkdir cmake_build
 cd cmake_build
 
+SET CUDACXX=%CUDA_PATH%\bin\nvcc.exe
+
 cmake -G Ninja ^
     -DBUILD_MRC=OFF ^
     -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
