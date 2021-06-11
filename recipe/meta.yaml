@@ -10,7 +10,7 @@ source:
   sha256: 6990567647c2ba561b1164200542e0d5bb756018b687f61221ae741068fb70e5
 
 build:
-  number: 1
+  number: 2
   skip: True  # [osx or (cuda_compiler_version in ('None', 'undefined'))]
 
 requirements:
@@ -33,7 +33,7 @@ requirements:
 
 test:
   requires:
-    - python
+    - python=3.9
   commands:
     - cudasirecon --help
     - python -c "import ctypes.util; assert ctypes.CDLL(ctypes.util.find_library('cudasirecon'))._name"
