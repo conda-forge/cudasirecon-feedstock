@@ -1,5 +1,5 @@
 {% set name = "cudasirecon" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/scopetools/cudasirecon/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6990567647c2ba561b1164200542e0d5bb756018b687f61221ae741068fb70e5
+  sha256: eeb0a77478bdf6fee812e6ccd26ed07e2d4b7984dfc6d3ea996d8bb18ceec093
 
 build:
   number: 3
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - tlambert03
+    - linshaova
