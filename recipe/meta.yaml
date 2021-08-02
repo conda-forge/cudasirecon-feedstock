@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/scopetools/cudasirecon/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: eeb0a77478bdf6fee812e6ccd26ed07e2d4b7984dfc6d3ea996d8bb18ceec093
+  sha256: b2db4ed214c7b9cb1b36801fea3942e65b9a5c1b45cdd04c47b5585790fee340
 
 build:
-  number: 0
+  number: 1
   skip: True  # [osx or (cuda_compiler_version in ('None', 'undefined'))]
 
 requirements:
