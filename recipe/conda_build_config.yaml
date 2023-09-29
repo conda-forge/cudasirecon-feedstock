@@ -1,11 +1,5 @@
 # These are for compatibility with nvcc 
 c_compiler:                # [win]
   - vs2017                 # [win]
-c_compiler_version:        # [linux]
-  - 7                      # [linux]
 cxx_compiler:              # [win]
   - vs2017                 # [win]
-cxx_compiler_version:      # [linux]
-  - 7                      # [linux]
-fortran_compiler_version:  # [linux]
-  - 7                      # [linux]
