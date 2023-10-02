@@ -1,5 +1,5 @@
 {% set name = "cudasirecon" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/scopetools/cudasirecon/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b2db4ed214c7b9cb1b36801fea3942e65b9a5c1b45cdd04c47b5585790fee340
+  sha256: e154b4d4fefe5af44dcba7b2d17afc9a26c7258988442e4d8bbb4585d582e2f1
 
 build:
-  number: 4
-  skip: True  # [osx or (cuda_compiler_version in ('None', 'undefined'))]
+  number: 0
+  skip: true  # [osx or (cuda_compiler_version in ('None', 'undefined'))]
 
 requirements:
   build:
