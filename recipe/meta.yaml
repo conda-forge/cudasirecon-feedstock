@@ -10,7 +10,7 @@ source:
   sha256: b2db4ed214c7b9cb1b36801fea3942e65b9a5c1b45cdd04c47b5585790fee340
 
 build:
-  number: 4
+  number: 5
   skip: True  # [osx or (cuda_compiler_version in ('None', 'undefined'))]
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - make  # [linux]
     - ninja  # [win]
   host:
-    - boost-cpp
+    - libboost-devel
     - libgomp  # [linux]
     - libblas
     - liblapack
@@ -30,7 +30,6 @@ requirements:
     - fftw
     - libcufft-dev      # [(cuda_compiler_version or "").startswith("12")]
   run:
-    - boost-cpp
 
 test:
   requires:
