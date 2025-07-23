@@ -1,5 +1,5 @@
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
@@ -7,23 +7,20 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cuda_compiler:
-- nvcc
+- cuda-nvcc
 cuda_compiler_version:
-- '11.8'
+- '12.6'
 cxx_compiler:
-- vs2019
+- vs2022
 fftw:
 - '3'
 libblas:
-- 3.9 *netlib
+- 3.9.* *netlib
 libboost_devel:
-- '1.86'
+- '1.88'
 liblapack:
-- 3.9 *netlib
+- 3.9.* *netlib
 libtiff:
 - '4.7'
 target_platform:
 - win-64
-zip_keys:
-- - cuda_compiler
-  - cuda_compiler_version
